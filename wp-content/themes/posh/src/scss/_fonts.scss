@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'OSC-Bold';
+  src: url('../../fonts/Open_Sans_Condensed/OpenSansCondensed-Bold.ttf') format('trueType');
+  font-style:  normal;
+}
+
+@font-face {
+  font-family: 'OS-Regular';
+  src: url('../../fonts/Open_Sans/OpenSans-Regular.ttf') format('trueType');
+  font-style:  normal;
+}
+
+
+$osc-bold: "OSC-Bold", sans-serif;
+$os-reg: "OS-Regular", sans-serif;
+
+
+.h1 {
+  font-family: $osc-bold;
+  font-size: 72px;
+  line-height: 1.72;
+}
