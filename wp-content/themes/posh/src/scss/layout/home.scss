@@ -1,0 +1,85 @@
+.home {
+  
+  &-intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .title {
+      width: 352px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      
+      @include sm {
+        width: 472px;
+      }
+      
+      @include md-lg {
+        width: 705px;
+      }
+    }
+  }
+  
+  &-projects {
+    padding-top: 64px;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    background-color: $gallery;
+    z-index: 100;
+    
+    transition: 1s top;
+    
+    .info {
+      margin-left: 48px;
+    }
+    
+    .examples {
+      margin-top: 64px;
+      
+      .example {
+        margin-bottom: 64px;
+        
+        .site {
+          position: relative;
+          
+          img {
+            padding: 0;
+          }
+        }
+        
+        .project-details {
+          
+          .arrow-right {
+            position: absolute;
+            top: 24px;
+            transition: 0.25s transform;
+            transform: rotate(-180deg);
+            cursor: pointer;
+            
+            &.active {
+              transform: rotate(0);
+            }
+          }
+          
+          .project-name {
+            position: absolute;
+            top: 26px;
+            left: 48px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s linear;
+            
+            &.active {
+              visibility: visible;
+              opacity: 1;
+            }
+          } 
+        }
+      }
+    }
+  }
+}

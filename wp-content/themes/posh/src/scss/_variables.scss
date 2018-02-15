@@ -1,9 +1,17 @@
 ////////////
 
 // color hexes
+$white            : #FFFFFF;
+$black            : #000000;
+$mine-shaft       : #303030;
+$royal-purple     : #663399;
+$gallery          : #EBEBEB;
 
 // ...
 
+.purple {
+  color: $royal-purple;
+}
 ////////////
 
 // devices
@@ -59,7 +67,7 @@ $gutter    : 32px;
   }
 }
 
-// < 991px;
+// < 1023px;
 @mixin xs-sm {
   @media screen and (max-width: $screen-md - 1) {
     @content;
@@ -73,7 +81,7 @@ $gutter    : 32px;
   }
 }
 
-// 768px - 991px
+// 768px - 1023px
 @mixin sm {
   @media screen and (min-width: $screen-sm) and (max-width: $screen-md - 1) {
     @content;
@@ -101,7 +109,7 @@ $gutter    : 32px;
   }
 }
 
-// >= 992px
+// >= 1024px
 @mixin md-lg {
   @media screen and (min-width: $screen-md) {
     @content;

@@ -1,0 +1,12 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  
+  border-left: 12px solid $mine-shaft;
+}

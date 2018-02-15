@@ -17,6 +17,27 @@ $os-reg: "OS-Regular", sans-serif;
 
 .h1 {
   font-family: $osc-bold;
-  font-size: 72px;
-  line-height: 1.72;
+  font-size: 36px;
+  line-height: 1;
+  
+  @include sm {
+    font-size: 48px;
+  }
+  
+  @include md-lg {
+    font-size: 72px;
+    line-height: 1.12;
+  }
+}
+
+.h2 {
+  font-family: $osc-bold;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.p1 {
+  font-family: $os-reg;
+  font-size: 20px;
+  line-height: 1.34;
 }

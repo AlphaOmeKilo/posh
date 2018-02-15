@@ -38,7 +38,7 @@ var posh = posh || {};
   $(window).on("scroll", function() {
     var scrollTop = $(document).scrollTop();
 
-    posh.globals.scrollDiff = scrollTop posh.globals.scrollTop;
+    posh.globals.scrollDiff = scrollTop - posh.globals.scrollTop;
     posh.globals.scrollingDown = posh.globals.scrollDiff > 0;
     posh.globals.scrollTop = scrollTop;
 
